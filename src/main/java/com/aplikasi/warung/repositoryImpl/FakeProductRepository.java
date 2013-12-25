@@ -10,21 +10,13 @@ import com.aplikasi.warung.repository.ProductRepository;
 
 @Service
 public class FakeProductRepository implements ProductRepository {
-
-	@Override
-	public Product getAllProduct() {
-		Product pro = new Product("Akita","Edukasi","Menghitung amal ibadah",50000);
-		return pro;
-	}
 	
 	@Override
 	public List<Product> getAllpro() {
 		List<Product> products = new ArrayList<Product>();
-		products.add(new Product("Akita","Edukasi","Menghitung amal ibadah",50000));
-
-		products.add(new Product("SAP","Algoritma","MaxFlow",50000));
-
-		products.add(new Product("MaxCa","Algoritma","MaxFlow",50000));
+			products.add(new Product(0,1,"Didika Kata","Didik Ganteng",800,1024, "512 MB","Win Vista","Intel",false));
+			products.add(new Product(1,1, "Akita","Menghitung amal ibadah", 50000, 1024, "512 MB", "Windows 7", "1 GHz", false));
+			products.add(new Product(2,2, "Tegar","Aplikasi penghitung dosa", 6000, 1024, "512 MB", "Windows 7", "2 GHz", false));
 		return products;
 	}
 

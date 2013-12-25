@@ -2,59 +2,84 @@ package com.aplikasi.warung.domain;
 
 public class Member {
 	
-	private String nama;
-	private String telepon;
-	private String alamat;
-	private String kodePos;
-	private String email;
+	
+	private int idPengguna;
+	private String namaPengguna;
+	private String emailPengguna;
+	private String alamatPengguna;
+	private String kodepos;
+	private String telpPengguna;
 	private String password;
 	
 	public Member(){
 		
 	}
-	public Member(String nama,String telepon,String alamat,String kodepos,String email,String password){
-		this.setNama(nama);
-		this.setTelepon(telepon);
-		this.setAlamat(alamat);
-		this.setKodePos(kodepos);
-		this.setEmail(email);
-		this.setPassword(password);
+	
+	public Member(int idPengguna,String namaPengguna,String emailPengguna,String alamatPengguna,String kodepos,String telpPengguna,String password){
+		setIdPengguna(idPengguna);
+		setNamaPengguna(namaPengguna);
+		setEmailPengguna(emailPengguna);
+		setAlamatPengguna(alamatPengguna);
+		setKodepos(kodepos);
+		setTelpPengguna(telpPengguna);
+		setPassword(password);
 	}
 	
-	public String getNama() {
-		return nama;
+	
+	public int getIdPengguna() {
+		return idPengguna;
 	}
-	public void setNama(String nama) {
-		this.nama = nama;
+
+	public void setIdPengguna(int idPengguna) {
+		this.idPengguna = idPengguna;
 	}
-	public String getTelepon() {
-		return telepon;
+
+	public String getNamaPengguna() {
+		return namaPengguna;
 	}
-	public void setTelepon(String telepon) {
-		this.telepon = telepon;
+
+	public void setNamaPengguna(String namaPengguna) {
+		this.namaPengguna = namaPengguna;
 	}
-	public String getAlamat() {
-		return alamat;
+
+	public String getEmailPengguna() {
+		return emailPengguna;
 	}
-	public void setAlamat(String alamat) {
-		this.alamat = alamat;
+
+	public void setEmailPengguna(String emailPengguna) {
+		this.emailPengguna = emailPengguna;
 	}
-	public String getKodePos() {
-		return kodePos;
+
+	public String getAlamatPengguna() {
+		return alamatPengguna;
 	}
-	public void setKodePos(String kodePos) {
-		this.kodePos = kodePos;
+
+	public void setAlamatPengguna(String alamatPengguna) {
+		this.alamatPengguna = alamatPengguna;
 	}
-	public String getEmail() {
-		return email;
+
+	public String getKodepos() {
+		return kodepos;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+
+	public void setKodepos(String kodepos) {
+		this.kodepos = kodepos;
 	}
+
+	public String getTelpPengguna() {
+		return telpPengguna;
+	}
+
+	public void setTelpPengguna(String telpPengguna) {
+		this.telpPengguna = telpPengguna;
+	}
+
 	public String getPassword() {
 		return password;
 	}
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 }

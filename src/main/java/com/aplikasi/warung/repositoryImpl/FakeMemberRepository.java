@@ -14,7 +14,7 @@ public class FakeMemberRepository implements MemberRepository {
 	private List<Member> members = new ArrayList<Member>();
 	
 	public FakeMemberRepository(){
-		members.add(new Member("Admin","123456789","Jl. QWERTY no.12", "10311","warsi@gmail.com","warsiCoy"));
+		//members.add(new Member("Admin","123456789","Jl. QWERTY no.12", "10311","warsi@gmail.com","warsiCoy"));
 	}
 	@Override
 	public List<Member> getMemberAll() {
